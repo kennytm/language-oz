@@ -1,0 +1,37 @@
+'.source.oz':
+  'b - Browse':
+    'prefix': 'b'
+    'body': '{Browse $1}\n'
+  's - Show':
+    'prefix': 's'
+    'body': '{Show $1}\n'
+  'case':
+    'prefix': 'case'
+    'body': 'case ${1:L}\nof nil then $2\n[] H|T then $3\nend'
+  'class - cla':
+    'prefix': 'cla'
+    'body': 'class ${1:Class}\n\tmeth init($2)\n\t\t$3\n\tend\nend'
+  'for':
+    'prefix': 'for'
+    'body': 'for ${1:I} in ${2:1}..${3:10} do $4 end'
+  'fun':
+    'prefix': 'fun'
+    'body': 'fun {${1:Name} ${2:Args}}\n\t$0\nend'
+  'ie - if … else':
+    'prefix': 'ie'
+    'body': 'if ${1:condition} then $2 else $3 end'
+  'if':
+    'prefix': 'if'
+    'body': 'if ${1:condition} then\n\t$2\nend'
+  'ife - if … else':
+    'prefix': 'ife'
+    'body': 'if ${1:condition} then\n\t$2\nelse\n\t$3\nend'
+  'in - local … in … end':
+    'prefix': 'in'
+    'body': 'local\n\t$1\nin\n\t$2\nend'
+  'meth':
+    'prefix': 'meth'
+    'body': 'meth ${1:name}(${2:\\$})\n\t$3\nend'
+  'proc':
+    'prefix': 'proc'
+    'body': 'proc {\\$}\n\t$1\nend'
