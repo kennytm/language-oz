@@ -1,4 +1,4 @@
 '.source.oz':
   'editor':
-    'increaseIndentPattern': '(?x)^(\\s*|.+=\\s*)\n    (\n      \\b(\n        class|proc|fun|local|import\n        |if|else|elseif|for|in\n        |case|meth\n      )\\b(?!.*?\\bend\\b)\n    |\n      # case .. of nil then .. (brackets) H|T then\n      \\bof\\s.+\\s+then\\b|\\[\\]\\s.+\\sthen\n    )\n    .*$'
-    'decreaseIndentPattern': '(?x)\n  (\n    ^\\s*(\n      (end|else|elseif|in|define)\\b\n    |\n      # case .. of nil then .. (brackets) H|T then\n      \\bof\\s.+\\s+then\\b|\\[\\]\\s.+\\sthen\n    )\n  )'
+    'increaseIndentPattern': '^(\\s*|.+=\\s*)(\\b(class|proc|fun|local|import|if|else|elseif|for|in|case|meth)\\b(?!.*?\\bend\\b)|\\bof\\s.+\\s+then\\b|\\[\\]\\s.+\\sthen).*$'
+    'decreaseIndentPattern': '(^\\s*((end|else|elseif|in|define)\\b|\\bof\\s.+\\s+then\\b|\\[\\]\\s.+\\sthen))'

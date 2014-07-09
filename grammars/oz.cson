@@ -15,7 +15,7 @@
     'name': 'comment.block.documentation.oz'
   }
   {
-    'match': '(?x)\\b(\n                andthen|at|attr|case|catch|class|choice|cond|\n                declare|define|do|dis|else|elsecase|elseif|\n                end|export|feat|finally|for|from|fun|functor|\n                if|in|import|lex|local|lock|meth|mode|not|of|\n                or|orelse|parser|prepare|proc|prod|prop|raise|require|\n                scanner|skip|syn|then|thread|token|try)\\b\n            |\n                ^\\s*\\[\\]'
+    'match': '\\b(andthen|at|attr|case|catch|class|choice|cond|declare|define|do|dis|else|elsecase|elseif|end|export|feat|finally|for|from|fun|functor|\n                if|in|import|lex|local|lock|meth|mode|not|of|or|orelse|parser|prepare|proc|prod|prop|raise|require|scanner|skip|suchthat|syn|then|thread|token|try)\\b|^\\s*\\[\\]'
     'name': 'keyword.control.oz'
   }
   {
@@ -50,7 +50,7 @@
         'name': 'entity.name.function.oz'
       '3':
         'name': 'variable.parameter.function.oz'
-    'match': '(?x)\n\t\t\t         \\b(fun|proc)\\b\\s+\n\t\t\t         \\{(\\w+)\n\t\t\t            ((?:\\s\\w+)*)\n\t\t\t         \\}'
+    'match': '\\b(fun|proc)\\b\\s+\\{(\\w+)((?:\\s\\w+)*)\\}'
     'name': 'meta.function.oz'
   }
   {
