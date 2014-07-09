@@ -1,12 +1,11 @@
 {
   "name": "language-oz",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Oz syntax for Atom",
   "repository": "https://github.com/kennytm/language-oz",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
