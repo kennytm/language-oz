@@ -15,7 +15,7 @@
     'name': 'comment.block.documentation.oz'
   }
   {
-    'match': '\\b(andthen|at|attr|case|catch|class|choice|cond|declare|define|do|dis|else|elsecase|elseif|end|export|feat|finally|for|from|fun|functor|\n                if|in|import|lex|local|lock|meth|mode|not|of|or|orelse|parser|prepare|proc|prod|prop|raise|require|scanner|skip|suchthat|syn|then|thread|token|try)\\b|^\\s*\\[\\]'
+    'match': '\\b(andthen|at|attr|case|catch|class|choice|cond|declare|define|do|dis|else|elsecase|elseif|end|export|feat|finally|for|from|fun|functor|if|in|import|lex|local|lock|meth|mode|not|of|or|orelse|parser|prepare|proc|prod|prop|raise|require|scanner|skip|suchthat|syn|then|thread|token|try)\\b|^\\s*\\[\\]'
     'name': 'keyword.control.oz'
   }
   {
